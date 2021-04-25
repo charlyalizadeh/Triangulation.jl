@@ -1,0 +1,11 @@
+name = "Triangulation"
+uuid = "c7d0a35a-3da7-4209-8951-7acb92227ce6"
+authors = ["charlyalizadeh <alizadehcharly@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+Combinatorics = "861a8166-3701-5b0c-9a16-15d98fcdc6aa"
+LightGraphs = "093fc24a-ae57-5d10-9952-331d41423f4d"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+MetaGraphs = "626554b9-1ddb-594c-aa3c-2596fe9399a5"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
