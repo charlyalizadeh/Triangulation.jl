@@ -105,7 +105,7 @@ Return true if `G` is chordal, false otherwise.
 """
 function ischordal(g)
     !is_connected(g) && return false
-    #NE(g) == NV(g) * (NV(g) - 1) / 2 && return true # if g is complete
+    ne(g) == nv(g) * (nv(g) - 1) / 2 && return true # if g is complete
     ordering = lbfs(g)
     for i in 3:length(ordering)
         index_neighbor = get_closest_neighbor(g, ordering, i)
