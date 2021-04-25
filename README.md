@@ -17,9 +17,9 @@ Algorithms based on vertex elimination use [MetaGraphs](https://github.com/Julia
 
 ## Merging algorithms
 
-* [ ] Molzahn et al. algorithm
-* [ ] Fujisawa et al. algorithm
-* [ ] Sliwak et al. algorithm
+* [ ] Molzahn et al. algorithm [[8]](#8)
+* [ ] Fujisawa et al. algorithm [[9]](#9)
+* [ ] Sliwak et al. algorithm [[10]](#10)
 
 
 ## References
