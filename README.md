@@ -13,7 +13,7 @@ Algorithms based on vertex elimination use [MetaGraphs](https://github.com/Julia
 * [X] Cholesky decomposition (`choleskydec`) [[3]](#3)
 * [X] LEX-M [[4]](#4)
 * [ ] Saturate Minimal Separator  [[7]](#7)
-* [ ] MCS-M [[5]](#5)
+* [X] MCS-M [[5]](#5)
 
 ## Ordering
 
