@@ -11,9 +11,15 @@ Algorithms based on vertex elimination use [MetaGraphs](https://github.com/Julia
 * [X] Elimination Game (`EG`) [[1]](#1)  
 * [X] Minimum Degree (`MD`) [[2]](#2)  
 * [X] Cholesky decomposition (`choleskydec`) [[3]](#3)
-* [ ] LEX M [[4]](#4)
-* [ ] Maximum Cardinality Search [[5]](#5)
+* [X] LEX-M [[4]](#4)
 * [ ] Saturate Minimal Separator  [[7]](#7)
+* [ ] MCS-M [[5]](#5)
+
+## Ordering
+
+* [X] Lexicographic Breadth First Search | Lex-BFS (`lbfs`) [[4]](#4)
+* [ ] Maximum Cardinality Search | MCS [[6]](#6)
+* [ ] Maximum Label Search | MLS [[11]](#11)
 
 ## Merging algorithms
 
@@ -51,4 +57,6 @@ Algorithms based on vertex elimination use [MetaGraphs](https://github.com/Julia
 <a id="9">[9]</a> K. Nakata, K. Fujisawa, M. Fukuda, M. Kojima, and K. Murota. Exploiting sparsity in semidefinite programming via matrix completion ii: Implementation and numerical results. *Mathematical Programming,* 95(2):303–327, 2003.
 
 
-<a id="10">[10]</a> [8] J. Sliwak, E. Andersen, M. F. Anjos, L. Letocart, and E. Traversi. A clique merging algorithm to solve semidenite relaxations of optimal power flow problems. *IEEE Transactions on Power Systems,* 2020.
+<a id="10">[10]</a> J. Sliwak, E. Andersen, M. F. Anjos, L. Letocart, and E. Traversi. A clique merging algorithm to solve semidenite relaxations of optimal power flow problems. *IEEE Transactions on Power Systems,* 2020.
+
+<a id="11">[11]</a> A. Berry, R. Krueger, and G. Simonet. Maximal label search algorithms to compute perfect and minimal elimination orderings. *SIAM Journal on Discrete Mathematics,* 23(1):428–446, 2009.
