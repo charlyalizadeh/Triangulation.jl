@@ -1,4 +1,4 @@
-function LEX_M!(g::AbstractGraph)
+function LEX_M!(g::AbstractSimpleGraph)
     origin_edges = edges(g)
     labels = zeros(Int, nv(g))
     order = zeros(Int, nv(g))
@@ -25,7 +25,7 @@ end
 
 
 function LEX_M(g::AbstractGraph)
-    cg = deepcopy(g)
+    cg = SimpleGraph(g)
     data = LEX_M!(cg)
     return cg, data
 end

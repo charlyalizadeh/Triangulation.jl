@@ -1,4 +1,4 @@
-function MCS_M!(g::AbstractGraph)
+function MCS_M!(g::AbstractSimpleGraph)
     origin_edges = edges(g)
     weights = zeros(Int, nv(g))
     order = zeros(Int, nv(g))
@@ -25,7 +25,7 @@ end
 
 
 function MCS_M(g::AbstractGraph)
-    cg = deepcopy(g)
+    cg = SimpleGraph(g)
     data = MCS_M!(cg)
     return cg, data
 end
