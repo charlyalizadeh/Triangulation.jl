@@ -1,25 +1,28 @@
-include("./utils/operator.jl")
-include("./utils/buildgraph.jl")
+include("../utils/operator.jl")
+include("../utils/buildgraph.jl")
+include("../utils/lbfs.jl")
 
 
-function MD!(g::AbstractGraph)
+function EG!(g::AbstractGraph, order=vertices(g))
     mg = buildmeta(g)
     origin_edges = edges(g)
-    for i in 1:nv(g)
-        mv = mindeg(mg)
+    old_mv = 0
+    for v in order
+        mv = vertex_s2m(mg, v)
         sedges = getsaturate(mg, mv)
         add_edges!(mg, sedges)
         sedges::Vector{Vector{Int}} = [edge_m2s(mg, e[1], e[2]) for e in sedges]
         add_edges!(g, sedges)
         rem_vertex!(mg, mv)
+        old_mv = mv
     end
     data = Dict("added_edges" => setdiff(edges(g), origin_edges))
     return data
 end
 
 
-function MD(g::AbstractGraph)
+function EG(g::AbstractGraph, order=vertices(g))
     cg = deepcopy(g)
-    data = MD!(cg)
+    data = EG!(cg, order)
     return cg, data
 end
