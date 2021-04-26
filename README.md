@@ -11,9 +11,11 @@ Algorithms based on vertex elimination use [MetaGraphs](https://github.com/Julia
 * [X] Elimination Game (`EG`) [[1]](#1)  
 * [X] Minimum Degree (`MD`) [[2]](#2)  
 * [X] Cholesky decomposition (`choleskydec`) [[3]](#3)
-* [X] LEX-M [[4]](#4)
-* [ ] Saturate Minimal Separator  [[7]](#7)
-* [X] MCS-M [[5]](#5)
+* [X] LEX-M (`LEX-M`) [[4]](#4)
+* [ ] Saturate Minimal Separator (I may not implement it because finding minimal separators of a graph is not trivial) [[7]](#7)
+* [X] MCS-M (`MCS-M`) [[5]](#5)
+* [ ] CliqueMinTriang [[12]](#12)
+* [ ] MinTriang [[12]](#12)
 
 ## Ordering
 
@@ -27,6 +29,10 @@ Algorithms based on vertex elimination use [MetaGraphs](https://github.com/Julia
 * [ ] Fujisawa et al. algorithm [[9]](#9)
 * [ ] Sliwak et al. algorithm [[10]](#10)
 
+
+## Credits
+
+Additionnaly to the references I want to credit [Feathergunner](https://github.com/Feathergunner) for his repos [Triangulation](https://github.com/Feathergunner/Triangulation) that I looked sometimes for more concretes implementations than the ones described in the papers.
 
 ## References
 
@@ -59,4 +65,8 @@ Algorithms based on vertex elimination use [MetaGraphs](https://github.com/Julia
 
 <a id="10">[10]</a> J. Sliwak, E. Andersen, M. F. Anjos, L. Letocart, and E. Traversi. A clique merging algorithm to solve semidenite relaxations of optimal power flow problems. *IEEE Transactions on Power Systems,* 2020.
 
+
 <a id="11">[11]</a> A. Berry, R. Krueger, and G. Simonet. Maximal label search algorithms to compute perfect and minimal elimination orderings. *SIAM Journal on Discrete Mathematics,* 23(1):428–446, 2009.
+
+
+<a id="12">[12]</a> [5] M. Mezzini and M. Moscarini. Simple algorithms for minimal triangulation of a graph and backward selection of a decomposable markov network. *Theoretical Computer Science*, 411(7-9):958–966, 2010.
