@@ -25,14 +25,14 @@ Algorithms based on vertex elimination use [MetaGraphs](https://github.com/Julia
 
 ## Merging algorithms
 
-* [ ] Molzahn et al. algorithm [[8]](#8)
+* [X] Molzahn et al. algorithm [[8]](#8)
 * [ ] Fujisawa et al. algorithm [[9]](#9)
-* [ ] Sliwak et al. algorithm [[10]](#10)
+* [X] Sliwak et al. algorithm [[10]](#10)
 
 
 ## Credits
 
-Additionnaly to the references I want to credit [Feathergunner](https://github.com/Feathergunner) for his repos [Triangulation](https://github.com/Feathergunner/Triangulation) that I looked sometimes for more concretes implementations than the ones described in the papers.
+Additionally to the references I want to credit [Feathergunner](https://github.com/Feathergunner) for his repos [Triangulation](https://github.com/Feathergunner/Triangulation) that I looked sometimes for more concretes implementations than the ones described in the papers.
 
 ## References
 
