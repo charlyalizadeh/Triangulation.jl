@@ -7,11 +7,11 @@ using Combinatorics
 using LinearAlgebra
 using SparseArrays
 
-include("./EG.jl")
-include("./MD.jl")
-include("./LEX_M.jl")
-include("./MCS_M.jl")
-include("./Cholesky.jl")
+include("./TriangulationAlgos/EG.jl")
+include("./TriangulationAlgos/MD.jl")
+include("./TriangulationAlgos/LEX_M.jl")
+include("./TriangulationAlgos/MCS_M.jl")
+include("./TriangulationAlgos/Cholesky.jl")
 
 export EG, EG!
        MD, MD!
