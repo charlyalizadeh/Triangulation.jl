@@ -1,4 +1,4 @@
-function LEX_M!(g::AbstractSimpleGraph)
+function LEX_M!(g::LightGraphs.AbstractSimpleGraph)
     origin_edges = edges(g)
     labels = zeros(Int, nv(g))
     order = zeros(Int, nv(g))

@@ -1,4 +1,4 @@
-function MCS_M!(g::AbstractSimpleGraph)
+function MCS_M!(g::LightGraphs.AbstractSimpleGraph)
     origin_edges = edges(g)
     weights = zeros(Int, nv(g))
     order = zeros(Int, nv(g))
